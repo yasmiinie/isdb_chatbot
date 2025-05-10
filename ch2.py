@@ -10,7 +10,7 @@ load_dotenv()
 
 api_key = os.getenv("OPENAI_API_KEY")
 
-def load_examples(json_path="islamic_finance_training_data_json.json", max_examples=3):
+def load_examples(json_path="islamic_finance_training_data_json.json", max_examples=10):
     with open(json_path, "r") as f:
         data = json.load(f)
 
